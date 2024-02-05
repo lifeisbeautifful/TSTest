@@ -9,8 +9,8 @@ export class LoginPage extends BasePage{
 
     constructor(page){
         super(page)
-        this.usernameField = page.locator("//input[@id='UserName']");
-        this.passwordField = page.locator("//input[@id='Password']");
+        this.usernameField = page.locator("id=UserName");
+        this.passwordField = page.locator("id=Password");
         this.loginBtn = page.locator("//input[@type='submit']");
     }
 
